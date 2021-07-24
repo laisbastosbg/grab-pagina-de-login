@@ -64,3 +64,7 @@ Cinza: #F8F8F8
 Também pode me enviar um feedback pelo [LinkedIn](https://www.linkedin.com/in/magdielndantas)!
 
 Desafio criado por [Magdiel Dantas](https://github.com/magdielndantas)
+
+## Tutoriais
+
+[Use Absolute Paths with React](https://betterprogramming.pub/use-absolute-paths-with-react-51ced66f119f)
