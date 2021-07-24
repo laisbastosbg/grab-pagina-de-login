@@ -68,3 +68,4 @@ Desafio criado por [Magdiel Dantas](https://github.com/magdielndantas)
 ## Tutoriais
 
 [Use Absolute Paths with React](https://betterprogramming.pub/use-absolute-paths-with-react-51ced66f119f)
+[Automagically lint and format your code](https://nickymeuleman.netlify.app/blog/automagically-lint)

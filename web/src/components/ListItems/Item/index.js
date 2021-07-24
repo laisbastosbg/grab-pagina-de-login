@@ -1,5 +1,5 @@
-import React from 'react';
+import React from 'react'
 
-import item from 'api/item';
+import item from 'api/item'
 
-export default () => <div>{ item }</div>
+export default () => <div>{item}</div>
