@@ -19,5 +19,6 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
     'jsx-quotes': ['warn', 'prefer-single'],
+    'react/prop-types': 'off',
   },
-};
+}
