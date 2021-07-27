@@ -9,7 +9,7 @@ export const TextField = styled(MTextField)`
 
   fieldset {
     border-radius: 25px;
-    border-color: #ffffff;
+    border: 2.5px solid #ffffff;
   }
 
   input {

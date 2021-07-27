@@ -1,6 +1,9 @@
 import styled from 'styled-components'
+
 import MAlternateEmailIcon from '@material-ui/icons/AlternateEmail'
 import MLockOutlinedIcon from '@material-ui/icons/LockOutlined'
+
+import { ReactComponent as SVGLogo } from 'assets/logo-grab.svg'
 
 export const StyledForm = styled.form`
   display: flex;
@@ -17,4 +20,8 @@ export const AlternateEmailIcon = styled(MAlternateEmailIcon)`
 
 export const LockOutlinedIcon = styled(MLockOutlinedIcon)`
   color: #ffffff;
+`
+export const Logo = styled(SVGLogo)`
+  width: 11.0625rem;
+  height: 4.361875rem;
 `

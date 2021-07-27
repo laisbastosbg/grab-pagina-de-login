@@ -4,10 +4,16 @@ import InputAdornment from '@material-ui/core/InputAdornment'
 
 import TextField from 'components/TextField'
 
-import { StyledForm, AlternateEmailIcon, LockOutlinedIcon } from './styles'
+import {
+  StyledForm,
+  AlternateEmailIcon,
+  LockOutlinedIcon,
+  Logo,
+} from './styles'
 
 const Form = ({ flex }) => (
   <StyledForm flex={flex}>
+    <Logo />
     <TextField
       variant='outlined'
       id='username'
