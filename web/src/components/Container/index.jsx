@@ -9,6 +9,7 @@ const Container = ({
   color,
   flex,
   children,
+  margin,
 }) => (
   <StyledContainer
     flexDirection={flexDirection}
@@ -16,6 +17,7 @@ const Container = ({
     alignItems={alignItems}
     color={color}
     flex={flex}
+    margin={margin}
   >
     {children}
   </StyledContainer>

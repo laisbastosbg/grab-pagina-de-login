@@ -5,6 +5,7 @@ import MTextField from '@material-ui/core/TextField'
 export const TextField = styled(MTextField)`
   &&& {
     margin: 8px;
+    width: 300px;
   }
 
   fieldset {
