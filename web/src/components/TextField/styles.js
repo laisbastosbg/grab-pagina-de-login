@@ -15,5 +15,7 @@ export const TextField = styled(MTextField)`
 
   input {
     padding: 15.5px 0;
+    color: #ffffff;
+    font-weight: bold;
   }
 `
