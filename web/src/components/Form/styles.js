@@ -12,6 +12,7 @@ export const StyledForm = styled.form`
   justify-content: center;
   height: 100%;
   width: 100%;
+  flex-wrap: wrap;
   flex: ${(props) => props.flex || ''};
 `
 export const AlternateEmailIcon = styled(MAlternateEmailIcon)`

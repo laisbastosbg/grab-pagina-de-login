@@ -4,20 +4,26 @@ import { StyledContainer } from './styles'
 
 const Container = ({
   flexDirection,
-  justifyConntent,
+  justifyContent,
   alignItems,
   color,
   flex,
   children,
   margin,
+  height,
+  width,
+  mediaDisplay,
 }) => (
   <StyledContainer
     flexDirection={flexDirection}
-    justifyConntent={justifyConntent}
+    justifyContent={justifyContent}
     alignItems={alignItems}
     color={color}
     flex={flex}
     margin={margin}
+    height={height}
+    width={width}
+    mediaDisplay={mediaDisplay}
   >
     {children}
   </StyledContainer>

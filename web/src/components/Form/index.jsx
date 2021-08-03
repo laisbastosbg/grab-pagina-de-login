@@ -5,6 +5,8 @@ import InputAdornment from '@material-ui/core/InputAdornment'
 import TextField from 'components/TextField'
 import Button from 'components/Button'
 import Container from 'components/Container'
+import Typography from 'components/Typography'
+import Link from 'components/Link'
 
 import {
   StyledForm,
@@ -16,7 +18,7 @@ import {
 const Form = ({ flex }) => (
   <StyledForm flex={flex}>
     <Logo />
-    <Container flexDirection='column' alignItems='center' margin='4.375rem 0'>
+    <Container flexDirection='column' alignItems='center' margin='8.375rem 0'>
       <TextField
         variant='outlined'
         id='username'
@@ -41,6 +43,10 @@ const Form = ({ flex }) => (
         }}
       />
       <Button size='large'>Entrar</Button>
+    </Container>
+    <Container flexDirection='column' alignItems='center'>
+      <Typography>Problemas para entrar?</Typography>
+      <Link to="/">Clique aqui</Link>
     </Container>
   </StyledForm>
 )
