@@ -26,14 +26,11 @@ const Form = ({ flex }) => {
   setLocale({
     string: {
       email: "Por favor, informe um email válido",
-      min: "A senha não pode ter menos de 8 caracteres",
     }
   })
 
   const loginSchema = yup.object().shape({
-    email: yup.string().email().required(),
-    password: yup.string().min(8).required()
-
+    email: yup.string().email().required()
   })
 
   const onSubmit = (e) => {
@@ -59,9 +56,9 @@ const Form = ({ flex }) => {
           }}
           onChange={(e) => setEmail(e.target.value)}
         />
+        {hasError && <Typography alignSelf="flex-start" margin="0 0 0 28px" variant="subtitle2">Por favor, informe um email válido</Typography>}
         <TextField
-          variant='outlined'
-          error={hasError}
+          variant='outlined' 
           id='password'
           type='password'
           InputProps={{

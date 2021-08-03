@@ -11,7 +11,7 @@ export const StyledForm = styled.form`
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 100%;
+  width: 18.75rem;
   flex-wrap: wrap;
   flex: ${(props) => props.flex || ''};
 `
