@@ -19,24 +19,31 @@ import {
 } from './styles'
 
 const Form = ({ flex }) => {
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   const [hasError, setHasError] = useState(false)
 
   setLocale({
     string: {
-      email: "Por favor, informe um email válido",
-    }
+      email: 'Por favor, informe um email válido',
+    },
   })
 
   const loginSchema = yup.object().shape({
-    email: yup.string().email().required()
+    email: yup.string().email().required(),
   })
 
   const onSubmit = (e) => {
     e.preventDefault()
 
-    loginSchema.validate({ email, password }).catch(() => setHasError(true))
+    loginSchema
+      .validate({ email, password })
+      .then(() => {
+        setEmail('')
+        setPassword('')
+        setHasError(false)
+      })
+      .catch(() => setHasError(true))
   }
 
   return (
@@ -45,6 +52,7 @@ const Form = ({ flex }) => {
       <Container flexDirection='column' alignItems='center' margin='8.375rem 0'>
         <TextField
           variant='outlined'
+          value={email}
           error={hasError}
           id='email'
           InputProps={{
@@ -56,9 +64,18 @@ const Form = ({ flex }) => {
           }}
           onChange={(e) => setEmail(e.target.value)}
         />
-        {hasError && <Typography alignSelf="flex-start" margin="0 0 0 28px" variant="subtitle2">Por favor, informe um email válido</Typography>}
+        {hasError && (
+          <Typography
+            alignSelf='flex-start'
+            margin='0 0 0 28px'
+            variant='subtitle2'
+          >
+            Por favor, informe um email válido
+          </Typography>
+        )}
         <TextField
-          variant='outlined' 
+          variant='outlined'
+          value={password}
           id='password'
           type='password'
           InputProps={{
@@ -70,11 +87,13 @@ const Form = ({ flex }) => {
           }}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <Button type="submit" size='large'>Entrar</Button>
+        <Button type='submit' size='large'>
+          Entrar
+        </Button>
       </Container>
       <Container flexDirection='column' alignItems='center'>
         <Typography>Problemas para entrar?</Typography>
-        <Link to="/">Clique aqui</Link>
+        <Link to='/'>Clique aqui</Link>
       </Container>
     </StyledForm>
   )

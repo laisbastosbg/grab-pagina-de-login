@@ -2,7 +2,15 @@ import React from 'react'
 
 import { TextField as MTextField } from './styles'
 
-const TextField = ({ variant, error, id, InputProps, type, onChange }) => (
+const TextField = ({
+  variant,
+  error,
+  id,
+  InputProps,
+  type,
+  onChange,
+  value,
+}) => (
   <MTextField
     variant={variant}
     error={error}
@@ -11,6 +19,7 @@ const TextField = ({ variant, error, id, InputProps, type, onChange }) => (
     size='medium'
     type={type}
     onChange={onChange}
+    value={value}
   />
 )
 

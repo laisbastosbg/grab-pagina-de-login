@@ -10,12 +10,25 @@ export const TextField = styled(MTextField)`
 
   fieldset {
     border-radius: 25px;
-    border: 2.5px solid #ffffff;
   }
 
   input {
     padding: 15.5px 0;
     color: #ffffff;
     font-weight: bold;
+  }
+
+  & .MuiOutlinedInput-root {
+    &.Mui-focused fieldset {
+      border: 2.5px solid #ffffff;
+    }
+
+    & fieldset {
+      border: 2.5px solid #ffffff;
+    }
+
+    &:hover fieldset {
+      border: 2.5px solid #ffffff;
+    }
   }
 `

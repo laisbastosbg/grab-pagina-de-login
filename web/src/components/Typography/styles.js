@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import MTypography from '@material-ui/core/Typography';
+import MTypography from '@material-ui/core/Typography'
 
 export const StyledTypography = styled(MTypography)`
   &&& {
@@ -8,4 +8,4 @@ export const StyledTypography = styled(MTypography)`
     align-self: ${(props) => props.alignSelf || ''};
     margin: ${(props) => props.margin || ''};
   }
-`;
+`

@@ -9,5 +9,7 @@ export const StyledButton = styled(Button)`
     width: ${(props) => props.width || '300px'};
     height: ${(props) => props.height || '50px'};
     border-radius: ${(props) => props.borderRadius || '25px'};
+    font-weight: 700;
+    text-transform: none;
   }
 `
